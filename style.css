@@ -1,0 +1,353 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'Young-serif';
+    src: url(font/YoungSerif-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Poppins-regular';
+    src: url(font/Poppins-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Poppins-Semi';
+    src: url(font/Poppins-SemiBold.ttf);
+  }
+  
+  body {
+    background-color: #F8F1EE;
+  }
+  
+  /* INICIO HEADER */
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 137px;
+  }
+  
+  .logo h2 {
+    color: #522318;
+    padding-left: 15px;
+    font-family: 'Young-serif';
+    font-size: 31.56px;
+  }
+  
+  #header {
+    background-color: #B99B8D;
+    height: 127px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 94px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .botoes {
+    display: flex;
+    background-color: #855C4A;
+    height: 52px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .botoes a {
+    color: white;
+    font-family: 'Poppins-regular';
+    font-size: 17px;
+  }
+  
+  #buscar {
+    padding: 13px 37px;
+    background-color: #522318;
+    border-radius: 30px;
+    width: 581px;
+    color: white;
+    font-family: 'Poppins-regular';
+    font-size: 15px;
+  }
+  
+  input::placeholder {
+    color: white;
+    font-family: 'Poppins-regular';
+  
+  }
+  
+  .fa-regular {
+    font-size: 31px;
+  }
+  
+  .login a {
+    text-decoration: none;
+    border: 3px #522318 solid;
+    padding: 10px 17px;
+    color: #522318;
+    border-radius: 11px;
+    font-family: 'Young-serif';
+    font-size: 15px;
+  }
+  
+  #favoritos {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  #cont-favoritos {
+    text-align: center;
+    font-family: 'Poppins-regular';
+    color: #522318;
+  }
+
+  /* FIM HEADER */
+
+  .inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 80px;
+  }
+
+  .titulo{
+    font-family: 'Young-serif';
+    color: #522318;
+  }
+  
+  .sub-titulo{
+    font-family: 'Poppins-regular';
+    color: #522318;
+    text-align: justify;
+    width: 500px; /* Largura do contêiner, você pode ajustar conforme necessário */
+    line-height: 1.5;
+  }
+
+  .qualidade {
+    width: 300px;
+    height: 300px;
+    background-color: #522318;
+    margin-top: 80px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; /* Defina a direção da flexbox como coluna */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .titulo2 {
+    font-family: 'Young-serif';
+    color: white;
+  }
+  
+  .lorem {
+    font-family: 'Poppins-regular';
+    color: white;
+  }
+  
+  .qualidade p {
+    text-align: center;
+    line-height: 1.5; /* Ajuste o valor para o espaçamento vertical desejado */
+    margin: 0;
+  }
+
+  .reta-divisao {
+    background-color: #3C2520;
+    width: 1036px;
+    height: 5px;
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 130px;
+  }
+
+  .papel {
+    width: 1449px; /* Largura da imagem "papel" */
+    height: auto; /* Mantenha a proporção original da imagem */
+    margin-top: 20px; /* Ajuste o espaçamento conforme necessário */
+  }
+  
+  .projetos {
+    position: relative;
+    display: inline-block;
+    background-image: url(img-interface/papelfundo.png);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    margin-top: 120px;
+    text-align: justify;
+  }
+
+  .projetos::before{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: brightness(1.5);
+  }
+
+  .projetos, *{
+    position: relative;
+    z-index: 1;
+  }
+
+  
+  .texto-img {
+    position: absolute;
+    top: 0; /* Posicione o texto no topo da imagem "papel" */
+    left: 50%; /* Centralize o texto horizontalmente */
+    transform: translateX(-50%); /* Ajuste a posição horizontal */
+    background-color: transparent; /* Remova o fundo transparente */
+    color: white;
+    margin-top: 60px; /* Ajuste o espaçamento conforme necessário */
+  }
+  
+  .saiba {
+    font-size: 35px;
+    color: #3C2520;
+    font-family: 'Poppins-regular';
+  }
+  
+  .proj {
+    font-family: 'Young-serif';
+    font-size: 40px;
+    color: #3C2520;
+    text-align: center;
+  }
+
+  .papel {
+    width: 1499px; /* Defina a largura da imagem para ocupar 100% da largura da tela */
+    height: auto; /* Mantenha a proporção original da imagem */
+    margin-top: 110px;
+  }
+
+.planta{
+  display: flex;
+}
+
+.nova-div{
+  display: flex;
+}
+
+.planta2{
+  display: flex;
+}
+
+.container2{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 94px;
+    margin-top: 90px;
+}
+
+.container1{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 94px;
+  margin-top: 275px;
+}
+
+.ajude{
+  font-family: 'Young-serif';
+  color: #3C2520;
+  margin-left: 10%;
+}
+
+.texto-direita{
+  font-family: 'Poppins-regular';
+  color: #522318;
+}
+
+/* INICIO FOOTER */
+footer {
+  background-color: #3C2520;
+}
+
+.container-footer,
+.parte1,
+.part2,
+.logo-footer {
+  display: flex;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4% 6%;
+  margin-top: 120px;
+}
+
+.container-footer nav {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Young-serif';
+  font-size: 22px;
+
+}
+
+.container-footer nav a {
+  margin: 12px 19px;
+  color: #E3CFBC;
+}
+
+.redes-sociais {
+  display: grid;
+  justify-items: center;
+}
+
+.redes-sociais img {
+  margin: 15px 0;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo-footer img {
+  width: 137px;
+}
+
+.logo-footer h2 {
+  padding-left: 37px;
+  font-family: 'Young-serif';
+  font-size: 31.56px;
+  color: #E3CFBC;
+}
+
+/* FIM FOOTER */
+
+.vaso{
+  width: 250px;
+    height: 200px;
+}
+
+.texto-direita{
+margin-right: 10%;
+line-height: 1.5;
+width: 450px;
+}
+
+.vaso-planta2{
+  margin-left: 10%;
+}
